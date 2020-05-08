@@ -143,3 +143,18 @@ Then, we can use those variable names in our string interpolation to `puts` out 
 Running the test suite with the above code should show all tests passing. You're ready to move on!
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/hash-iteration' title='Iterating Over Hashes With #each'>Iterating Over Hashes With #each</a> on Learn.co and start learning to code for free.</p>
+
+def select_winner(passengers)
+  passengers.each do |key, value|
+    if key == :suite_a && value.start_with?("A")
+      return passengers[:suite_a]
+    end
+  end
+end
+
+def happy_birthday(birthday_kids)
+  # add your code snippet here!
+  birthday_kids.each do |name, age|
+    puts "Happy Birthday #{name}! You are now #{age} years old!"
+  end
+end
